@@ -1,0 +1,6 @@
+# dsh bundle layer: mount the host plugin that publishes the
+# `minimal-web` agent preset into $DSH_HOME/.agent-presets on boot,
+# and removes it again when this package uninstalls.
+- insert:
+    - id: dsh-minimal-web
+      name: 'dsh-minimal-web'

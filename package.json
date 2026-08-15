@@ -1,0 +1,32 @@
+{
+  "name": "dsh-minimal-web",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness agent preset: minimal-mode with web search and AGENTS.md loading (极简模式（网络）).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "files": [
+    "lib",
+    "presets",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dependencies": {
+    "dsh-preset-kit": "^0.1.0"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "agent-preset",
+    "minimal"
+  ],
+  "license": "MIT"
+}
